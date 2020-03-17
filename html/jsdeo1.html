@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS demo 1</title>
+</head>
+
+<body>
+    <h2>Js demo <i class="fas fa-wordpress-simple    "></i></h2>
+    <div>
+        Number1: <input type="text" name="firstnum" id="firstnum" value="a"></br></br>
+        Number2: <input type="text" name="secondnum" id="secondnum" value="b"></br></br>
+        <button type="button" onclick="Addition()">Addition</button>
+        <button type="button" onclick="Subtraction()">Subtraction</button>
+        <button type="button" onclick="multiplication()">multiplication</button>
+        <button type="button" onclick="Division()">Division</button>
+        <h3 id="result"></h3>
+    </div>
+
+    <script>
+
+        function Addition() {
+            var x = parseInt(document.getElementById('userName').value);
+            var y = ParseInt(document.getElementById('userName2').value);
+            document.getElementById('result').innerHTML= x +y;
+        }
+        function Subtraction() {
+            var x = document.getElementById('userName').value;
+            var y = document.getElementById('userName2').value;
+            document.getElementById('result').innerHTML= x - y;
+        }
+        function Multiplication() {
+            var x = document.getElementById('userName').value;
+            var y = document.getElementById('userName2').value;
+            document.getElementById('result').innerHTML= x * y;
+        }
+        function Division() {
+            var x = document.getElementById('userName').value;
+            var y = document.getElementById('userName2').value;
+            document.getElementById('result').innerHTML= x / y;
+    </script>
+</body>
+
+</html>
